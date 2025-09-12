@@ -1,0 +1,13 @@
+@import '~antd/dist/antd.css';
+
+
+
+.App {
+  margin-top: 3rem;
+  background-color: #000020;
+}
+
+.App img {
+  margin-bottom: 3rem;
+}
+

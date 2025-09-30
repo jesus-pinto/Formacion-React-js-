@@ -1,0 +1,64 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  --color-primario: #00008e;
+  --color-secundario: #000066;
+  --color-bordes-1: #858280;
+  --color-lista-1: #858280;
+  --color-lista-2: #4e4b49;
+}
+
+body {
+  background: #000033;
+}
+
+.App-container {
+  border: solid 1px var(--color-bordes-1);
+  box-shadow: 0 0 8px var(--color-bordes-1);
+  padding: 20px;
+  border-radius: 8px;
+  min-width: 560px;
+  min-height: 600px;
+  background-color: var(--color-secundario);
+}
+.App-container .infoList__ul {
+  padding: 0;
+  list-style: none;
+}
+.App-container .infoList__ul .infoList__li {
+  border: solid 1px;
+  border-radius: 8px;
+  margin-top: 6px;
+  padding: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.App-container .infoList__ul .infoList__li:hover {
+  background-color: var(--color-lista-1);
+  transform: scale(1.05);
+  border: solid 1px white;
+  box-shadow: 0 0 10px 0 white;
+}
+.App-container .app-img {
+  margin-top: 20px;
+  width: 80%;
+  height: 370px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 var(--color-secundario);
+}
+
+.filter-search-container .search-input-container {
+  display: flex;
+  align-items: center;
+}
+.filter-search-container .search-input-container .input-filter-search {
+  width: 70%;
+  height: 30px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+.filter-search-container .search-input-container .input-filter-search:hover {
+  box-shadow: 0 0 5px blue;
+}/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,106 @@
+/* Reset y contenedor principal */
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+body {
+  background: #e0f7fa;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+
+h1 { text-align:center; margin-bottom:25px; color:#00796b; }
+
+.pantalla { margin-bottom:25px; padding:20px; border-radius:12px; background:#f0f4f4; transition:all 0.3s ease; }
+
+.btn {
+  display:inline-block; padding:12px 24px; border:none; border-radius:12px;
+  background:#00796b; color:#fff; font-weight:600; cursor:pointer; font-size:16px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1); transition:all 0.3s ease;
+  margin-top:20px;
+}
+
+.btn:hover {
+  background:#004d40; transform:translateY(-2px); box-shadow:0 6px 14px rgba(0,0,0,0.15);
+}
+
+/* Contenedor de respuesta */
+.respuesta {
+  margin-top: 20px;
+}
+
+/* Skeleton parpadeante */
+.skeleton {
+  height: 60px;
+  background: #ddd;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+/* Tarjetas finales */
+.respuesta p {
+  background: #e0f2f1;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  border-left: 5px solid #00796b;
+  border-radius: 10px;
+  font-weight: 500;
+  transition:all 0.3s ease;
+}
+
+.respuesta p:hover { background: #b2dfdb; }
+
+/* Loader tipo bola girando */
+.loader-bola {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.loader-bola div {
+  width: 15px;
+  height: 15px;
+  background: #00796b;
+  border-radius: 50%;
+  animation: girar 0.6s linear infinite;
+}
+
+.loader-bola div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loader-bola div:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes girar {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.loader-text {
+  font-weight: 600;
+  color: #00796b;
+  font-size: 16px;
+}
